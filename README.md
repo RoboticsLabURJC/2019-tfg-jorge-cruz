@@ -5,4 +5,4 @@ Let's start! I have started by checking some Python tutorials and familiarizing 
 
 Getting images from the car:
 
-(2019-tfg-jorge-cruz/docs/[FL]Camera_RGB.png)
+[img](https://github.com/RoboticsURJC-students/2019-tfg-jorge-cruz/blob/master/docs/%5BFL%5DCamera_RGB.png)
