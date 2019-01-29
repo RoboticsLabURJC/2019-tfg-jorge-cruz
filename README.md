@@ -7,7 +7,7 @@ Getting images from the car:
 
 ![img](/docs/[FL]Camera_RGB.png)
 
-RGB to HSV:
+Transform RGB image to HSV:
 
 ![img](/docs/[FL]Camera_HSV.png)
 
