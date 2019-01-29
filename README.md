@@ -5,4 +5,4 @@ Let's start! I have started by checking some Python tutorials and familiarizing 
 
 Getting images from the car:
 
-[img](/docs/[FL]Camera_RG.png)
+[img](/docs/[FL]Camera_RGB.png)
