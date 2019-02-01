@@ -12,10 +12,9 @@ Image filtered by red values:
 ![img](/docs/[FL]Camera_HSV.png)
 
 ```
-# Implement execute method
 def execute(self):
     print('Iteración')
-    self.motors.sendV(2)
+    #self.motors.sendV(5)
     img_RGB = self.getImage() # Obtener imagen
     img_HSV = cv2.cvtColor(img_RGB,cv2.COLOR_RGB2HSV) # Pasar de RGB a HSV
     
@@ -24,9 +23,11 @@ def execute(self):
     image_HSV_filtered = cv2.inRange(img_HSV, value_min_HSV, value_max_HSV) # Imagen en Blanco y Negro
     self.set_threshold_image(image_HSV_filtered) # Imprimir imagen Filtrada
    
-    # Crear una máscara (Quedarnos solo con la línea).
+    # Crear una máscara (Quedarnos solo con la línea ¿?).
     image_HSV_filtered_Mask = np.dstack((image_HSV_filtered, image_HSV_filtered, image_HSV_filtered))
     self.set_threshold_image(image_HSV_filtered_Mask)
+    
+    # Obtener los píxeles donde cambia de tono
 
     size = image_HSV_filtered_Mask.shape
     print(size)
