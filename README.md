@@ -49,7 +49,7 @@ if __name__ == "__main__":
     # Cargamos el robot
     f1 = F1()
         
-    CENTRO_X = 320
+    CENTRO_X = 320 # Basado en que la imagen en 640x480
     MARGEN = 20 # píxeles
     
     def get_centro():
