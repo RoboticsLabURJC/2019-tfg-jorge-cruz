@@ -76,23 +76,26 @@ if __name__ == "__main__":
         if estoy_izda(posx):
             print 'Me estoy yendo a la izda'
             giro = calcular_angulo(posx)
+            f1.parar() # Enderezar el volante con respecto a giros anteriores
             f1.girarIzquierda(giro)
             f1.avanzar(0.5)
         elif estoy_dcha(posx):
             print 'Me estoy yendo a la dcha'
             giro = calcular_angulo(posx)
+            f1.parar() # Enderezar el volante con respecto a giros anteriores
             f1.girarDerecha(giro)
             f1.avanzar(0.5)
         else:
             print 'Estoy centrado'
-            f1.avanzar(0.5)
+            f1.parar() # Enderezar el volante con respecto a giros anteriores
+            f1.avanzar(1)
         
     while True:        
         centro_actual = get_centro()
         print centro_actual
         comprobar_posicion(centro_actual[0])
         
-        time.sleep(2)
+        time.sleep(1)
 
 ```
 
