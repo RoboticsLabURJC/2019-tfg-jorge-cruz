@@ -11,31 +11,7 @@ Image filtered by red values:
 
 ![img](/docs/[FL]Camera_HSV.png)
 
-```
-def execute(self):
-    print('Iteración')
-    #self.motors.sendV(5)
-    img_RGB = self.getImage() # Obtener imagen
-    img_HSV = cv2.cvtColor(img_RGB,cv2.COLOR_RGB2HSV) # Pasar de RGB a HSV
-    
-    value_min_HSV = np.array([0, 235, 60])
-    value_max_HSV = np.array([180, 255, 255])
-    image_HSV_filtered = cv2.inRange(img_HSV, value_min_HSV, value_max_HSV) # Imagen en Blanco y Negro
-    self.set_threshold_image(image_HSV_filtered) # Imprimir imagen Filtrada
-   
-    # Crear una máscara (Quedarnos solo con la línea ¿?).
-    image_HSV_filtered_Mask = np.dstack((image_HSV_filtered, image_HSV_filtered, image_HSV_filtered))
-    self.set_threshold_image(image_HSV_filtered_Mask)
-    
-    # Obtener los píxeles donde cambia de tono
-
-    size = image_HSV_filtered_Mask.shape
-    print(size)
-
-fl.setExecute(execute)
-
-````
-VERSION 1. It works at a constant speed and very slow
+VERSION 1.
 ```
 %matplotlib inline
 
