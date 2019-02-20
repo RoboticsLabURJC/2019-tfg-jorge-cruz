@@ -3,13 +3,10 @@
 # WEEK 1
 Let's start! I have started by checking some Python tutorials and familiarizing with the JdeRobot Kibotics interface. To that end, I have solved the Follow Line exercise. This is a short summary of how I solved it:
 
-Getting images from the car:
+Getting images from the car - Image filtered by red values
 
-![img](/docs/[FL]Camera_RGB.png)
 
-Image filtered by red values:
-
-![img](/docs/[FL]Camera_HSV.png)
+![img](/docs/[FL]Camera_RGB.png) ![img](/docs/[FL]Camera_HSV.png)
 
 VERSION 1.
 ```
@@ -79,9 +76,9 @@ if __name__ == "__main__":
             f1.avanzar(c*0.7)
 
     def get_angle(x):
-        c = float(120)
+        dist = float(120) # distance from (x_center,0) to (x_center,y_center)
         desviation = float(abs(x-CENTER_X))
-        degrees = math.atan(desviation/c)
+        degrees = math.atan(desviation/dist)
         radians = (degrees*math.pi)/180
         c = 20 # correction factor by testing
         return c*radians
