@@ -1,10 +1,14 @@
 # 2019-tfg-jorge_cruz
 
+# WEEK 2
+I continue solving examples of vision behavioral in robotics. Now I'll solve the exercise ***PiBot Follow Ball***. That's my solution:
+
+[WORKING ON IT]
+
 # WEEK 1
-Let's start! I have started by checking some Python tutorials and familiarizing with the JdeRobot Kibotics interface. To that end, I have solved the Follow Line exercise. This is a short summary of how I solved it:
+Let's start! I have started by checking some Python tutorials and familiarizing with the JdeRobot Kibotics interface. To that end, I have solved the ***Formula 1 Follow Line*** exercise. This is a short summary of how I solved it:
 
 Get images from the car - Image filtered by red values
-
 
 ![img](/docs/[FL]Camera_RGB.png) ![img](/docs/[FL]Camera_HSV.png)
 
