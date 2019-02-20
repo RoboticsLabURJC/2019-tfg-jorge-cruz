@@ -9,6 +9,7 @@ Get images from the car - Image filtered by red values
 ![img](/docs/[FL]Camera_RGB.png) ![img](/docs/[FL]Camera_HSV.png)
 
 Get the interets points of the image
+
 ![img](/docs/[FL]Interets-Points.JPG) 
 
 Once we have the center on the line, we can work with the functions given in KibBotics.
@@ -21,7 +22,7 @@ Once we have the center on the line, we can work with the functions given in Kib
 
 This is the result obtained:
 
-[![IMAGE ALT TEXT](/docs/[FL]Camera_HSV.png)](https://youtu.be/x7tjk7Ptbkc "Follow Line Video")
+[![IMAGE ALT TEXT](/docs/[FL]Video.JPG)](https://youtu.be/x7tjk7Ptbkc "Follow Line Video")
 
 
 ***CODE***
