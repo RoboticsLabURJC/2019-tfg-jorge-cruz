@@ -3,7 +3,7 @@
 # WEEK 1
 Let's start! I have started by checking some Python tutorials and familiarizing with the JdeRobot Kibotics interface. To that end, I have solved the Follow Line exercise. This is a short summary of how I solved it:
 
-Getting images from the car - Image filtered by red values
+Get images from the car - Image filtered by red values - Get the interets points of the image
 
 
 ![img](/docs/[FL]Camera_RGB.png) ![img](/docs/[FL]Camera_HSV.png)
