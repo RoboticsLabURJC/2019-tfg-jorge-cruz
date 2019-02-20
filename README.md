@@ -3,12 +3,28 @@
 # WEEK 1
 Let's start! I have started by checking some Python tutorials and familiarizing with the JdeRobot Kibotics interface. To that end, I have solved the Follow Line exercise. This is a short summary of how I solved it:
 
-Get images from the car - Image filtered by red values - Get the interets points of the image
+Get images from the car - Image filtered by red values
 
 
 ![img](/docs/[FL]Camera_RGB.png) ![img](/docs/[FL]Camera_HSV.png)
 
-VERSION 1.
+Get the interets points of the image
+![img](/docs/[FL]Interets-Points.JPG) 
+
+Once we have the center on the line, we can work with the functions given in KibBotics.
+* **dameObjeto()**: will return 2 data: center (coordinates (pixelX, pixelY) of the center) and area (number of pixels).
+* **avanzar(v)**: Move in a straight line (v = m/s)
+* **retroceder(v)**: Go back in a straight line (v = m/s)
+* **girarIzquierda(w)**: Turn left on its axis (w = rads/s)
+* **girarDerecha(w)**:  Turn right on its axis (w = rads/s)
+* **parar()**: Stop the car
+
+This is the result obtained:
+
+[![IMAGE ALT TEXT](/docs/[FL]Camera_HSV.png)](https://youtu.be/x7tjk7Ptbkc "Follow Line Video")
+
+
+***CODE***
 ```
 %matplotlib inline
 
@@ -105,4 +121,3 @@ if __name__ == "__main__":
         work(x,y)
 
 ```
-VIDEO
