@@ -3,9 +3,12 @@
 # WEEK 2
 I continue solving examples of vision behavioral in robotics. Now I'll solve the exercise ***PiBot Follow Ball***. That's my solution:
 
-Get images from the PiBot and apply color filters.
-
- ![img](/docs/[FB]Filter.JPG)
+<p align="center">
+ Get images from the PiBot and apply color filters
+ </p>
+<p align="center"> 
+  <img src="/docs/[FB]Filter.JPG"
+</p>
 
 <p align="center">
     Get the interets points of the image
