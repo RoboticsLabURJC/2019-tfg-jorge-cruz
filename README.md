@@ -3,6 +3,28 @@
 # WEEK 2
 I continue solving examples of vision behavioral in robotics. Now I'll solve the exercise ***PiBot Follow Ball***. That's my solution:
 
+Get images from the PiBot and apply color filters.
+
+![img](/docs/[FB]Filter.JPG)
+
+Get the interets points of the image
+
+![img](/docs/[FB]Points.JPG)
+
+Once we have the center on the object, we can work with the functions given in KibBotics.
+* **dameObjeto()**: will return 2 data: center (coordinates (pixelX, pixelY) of the center) and area (number of pixels).
+* **avanzar(v)**: Move in a straight line (v = m/s)
+* **retroceder(v)**: Go back in a straight line (v = m/s)
+* **girarIzquierda(w)**: Turn left on its axis (w = rads/s)
+* **girarDerecha(w)**:  Turn right on its axis (w = rads/s)
+* **parar()**: Stop the car
+
+This is the result obtained:
+
+[![IMAGE ALT TEXT](/docs/[FB]Iteration_1.JPG)](https://youtu.be/pLYk-796DTA "Follow Ball Video-1")
+[![IMAGE ALT TEXT](/docs/[FB]Iteration_2.JPG)](https://youtu.be/luqyIFiPc6M "Follow Ball Video-2")
+
+
 ***CODE***
 ___
 
