@@ -5,11 +5,15 @@ I continue solving examples of vision behavioral in robotics. Now I'll solve the
 
 Get images from the PiBot and apply color filters.
 
-![img](/docs/[FB]Filter.JPG)
+ <img align="left" src="/docs/[FB]Filter.JPG">
 
-Get the interets points of the image
+<p align="center">
+    Get the interets points of the image
+</p>
 
-![img](/docs/[FB]Points.JPG)
+<p align="center">
+  <img src="/docs/[FB]Points.JPG">
+</p>
 
 Once we have the center on the object, we can work with the functions given in KibBotics.
 * **dameObjeto()**: will return 2 data: center (coordinates (pixelX, pixelY) of the center) and area (number of pixels).
