@@ -5,7 +5,7 @@ I continue solving examples of vision behavioral in robotics. Now I'll solve the
 
 Get images from the PiBot and apply color filters.
 
- <img align="left" src="/docs/[FB]Filter.JPG">
+ ![img](/docs/[FB]Filter.JPG)
 
 <p align="center">
     Get the interets points of the image
