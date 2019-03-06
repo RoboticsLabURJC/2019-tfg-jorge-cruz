@@ -3,6 +3,9 @@
 # WEEK 2
 I continue solving examples of vision behavioral in robotics. Now I'll solve the exercise ***PiBot Follow Ball***. That's my solution:
 
+***CODE***
+___
+
 ```
 # -*- coding: utf-8 -*-
 import sys, time
@@ -108,6 +111,7 @@ This is the result obtained:
 
 
 ***CODE***
+___
 ```
 %matplotlib inline
 
