@@ -1,7 +1,14 @@
 # 2019-tfg-jorge_cruz
 
+# WEEK 4
+I created a new gazebo world for a new practice/exercise on the kibotics platform.
+
+[STILL WORKING ON IT]
+
 # WEEK 3
 I have installed the docker and the necessary dependencies to run the simulations on my local machine.
+
+[![IMAGE ALT TEXT](/docs/lista_reproducción_docker.png)](https://www.youtube.com/playlist?list=PLH1XVnS33teVaV3bzCm5OtXfd_RqjqVBN "Lista Reproducción")
 
 # WEEK 2
 I continue solving examples of vision behavioral in robotics. Now I'll solve the exercise ***PiBot Follow Ball***. That's my solution:
