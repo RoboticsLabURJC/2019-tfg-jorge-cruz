@@ -1,9 +1,17 @@
 # 2019-tfg-jorge_cruz
 
 # WEEK 4
-I created a new gazebo world for a new practice/exercise on the kibotics platform.
+Learning how to create a new gazebo world. First, I istalled Gazebo and checked some tutorials. I started creating a texture from an image for use it as ground.
 
-[STILL WORKING ON IT]
+* I download an image from internet.
+![img](/docs/MyImage.png)
+
+* I follow [this tutorial](http://answers.gazebosim.org/question/4761/how-to-build-a-world-with-real-image-as-ground-plane/) to add this image as a texture in Gazebo
+![img](/docs/alfombra.png)
+![img](/docs/alfombra_vertical.png)
+
+
+[WORKING ON IT]
 
 # WEEK 3
 I have installed the docker and the necessary dependencies to run the simulations on my local machine.
