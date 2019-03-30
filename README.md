@@ -10,6 +10,10 @@ Learning how to create a new gazebo world. First, I istalled Gazebo and checked 
 ![img](/docs/alfombra.png)
 ![img](/docs/alfombra_vertical.png)
 
+* Adjust the texture size and add the PiBot model.
+![img](/docs/alfombra_pibot1.png)
+![img](/docs/alfombra_pibot2.png)
+
 
 [WORKING ON IT]
 
