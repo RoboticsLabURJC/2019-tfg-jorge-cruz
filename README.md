@@ -1,5 +1,14 @@
 # 2019-tfg-jorge_cruz
 
+
+# WEEK 5
+
+I have done the following issues:
+
+* I have updated my computer's operating system.
+* I have read some documentation about Jupyter kernel.
+* I tried to use the Gazebo world that created in Gzweb, without success (working on it).
+
 # WEEK 4
 Learning how to create a new gazebo world. First, I istalled Gazebo and checked some tutorials. I started creating a texture from an image for use it as ground.
 
