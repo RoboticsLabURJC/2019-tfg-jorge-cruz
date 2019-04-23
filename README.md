@@ -1,5 +1,22 @@
 # 2019-tfg-jorge_cruz
 
+# WEEK 6
+
+In order to recreate the necessary framework to create a new practice on kibotics, i Installed the following software on my computer with Ubuntu 16.04 LTS:
+
+* Gazebo 7.
+* Jupyter notebook.
+* JdeRobot source code.
+    * git clone http://github.com/RoboticsURJC/JdeRobot.git
+* ROS 
+   * Following this tutorial: http://wiki.ros.org/ariac/Tutorials/SystemSetup
+   
+I tried to run an old .ipynb that I created on Kibotics, on Jupyter notebook in my computer, but some modules and packages dependencies failed.
+
+![img](/docs/error_modulo.png)
+
+Still working to find out how to connect Jupyter notebook with Gazebo
+
 
 # WEEK 5
 
