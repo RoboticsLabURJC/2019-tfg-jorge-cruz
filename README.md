@@ -1,5 +1,45 @@
 # 2019-tfg-jorge_cruz
 
+# WEEK 7
+
+After some difficulties installing the packages and the necessary dependencies to run the simulations on my pc, I have managed to establish the connection between jupyter notebook and gazebo.
+
+I get to instruct the Pibot to move forward, backward and to the sides.
+
+I have created a new gazebo model with a real carpet where the PiBot will work.
+
+![img](/docs/scene-alfombra.jpg)
+
+With this simple code I get the image from the PiBot camera:
+
+```
+import sys
+sys.path.insert(0, '/usr/local/lib/python2.7')
+sys.path.insert(0, '/opt/jderobot/lib/python2.7/PiBot/gazebo')
+
+from piBot import PiBot
+import time
+import random
+import config
+import cv2
+
+# Cargamos el robot
+cfg = config.load('/home/jorge/cuadernillos-kibotics/Kibotics.yml')
+robot = PiBot(cfg)
+
+img = robot.dameImagen()
+
+cv2.imshow("img", img)
+cv2.waitKey(0)
+
+```
+
+This is the image from the PiBot camera:
+
+![img](/docs/camera-pibot.png)
+
+
+
 # WEEK 6
 
 In order to recreate the necessary framework to create a new practice on kibotics, i Installed the following software on my computer with Ubuntu 16.04 LTS:
@@ -40,8 +80,6 @@ Learning how to create a new gazebo world. First, I istalled Gazebo and checked 
 ![img](/docs/alfombra_pibot1.png)
 ![img](/docs/alfombra_pibot2.png)
 
-
-[WORKING ON IT]
 
 # WEEK 3
 I have installed the docker and the necessary dependencies to run the simulations on my local machine.
