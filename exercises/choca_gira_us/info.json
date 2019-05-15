@@ -1,0 +1,9 @@
+{
+  "choca_gira_us":{
+    "language": "python",
+    "platform": "",
+    "world": ".world",
+    "models": "asd",
+    "referee": false
+  }
+}
