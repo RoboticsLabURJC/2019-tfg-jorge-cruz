@@ -1,5 +1,57 @@
 # 2019-tfg-jorge_cruz
 
+# WEEK 8
+
+This week I've been working on a method to detect the road of the children's carpet.
+
+First I have improved the gazebo world, illuminating it better.
+
+![img](/docs/alfombra/captura_gazebo.png)
+
+These are the steps I'm taking to detect the road.
+
+* Get the image from the PiBot camera.
+```
+img = robot.dameImagen()
+```
+![img](/docs/alfombra/img.png)
+
+
+* Convert RGB image to HSV
+```
+hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
+```
+![img](/docs/alfombra/hsv.png)
+
+* Filter HSV image by grey values
+```
+gris_bajo = np.array([50,40,40])
+gris_alto = np.array([100, 255, 255])
+mascara_gris = cv2.inRange(hsv, gris_bajo, gris_alto)
+```
+![img](/docs/alfombra/mascara_gris.png)
+
+* Crop the image
+```
+crop_img = mascara_gris[180:300, 0:400]
+```
+![img](/docs/alfombra/crop.png)
+
+I'm working to improve the color filter.
+
+I show all the images whit this function: 
+```
+cv2.imshow("Nombre de la ventana", imagen)
+
+#Salir con ESC
+while(1):
+    tecla = cv2.waitKey(5) & 0xFF
+    if tecla == 27:
+        break
+ 
+cv2.destroyAllWindows()
+```
+
 # WEEK 7
 
 After some difficulties installing the packages and the necessary dependencies to run the simulations on my pc, I have managed to establish the connection between jupyter notebook and gazebo.
