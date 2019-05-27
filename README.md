@@ -1,5 +1,17 @@
 # 2019-tfg-jorge_cruz
 
+# WEEK 9
+
+I added a stop sign to gazebo's world and I've worked with the image that the pibot get and the color filters to detect the signal.
+
+![img](/docs/alfombra/stop.png)
+![img](/docs/alfombra/stop_pibot.png)
+![img](/docs/alfombra/stop_pibot_filter.png)
+
+This is a video example of how to PiBot robot stops when te stop signal is close to it.
+[![click here](VIDEO)](https://youtu.be/1SdQ4zZTE1Y "PiBot stops")
+
+
 # WEEK 8
 
 This week I've been working on a method to detect the road of the children's carpet.
