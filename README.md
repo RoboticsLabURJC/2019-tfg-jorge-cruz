@@ -11,6 +11,52 @@ I added a stop sign to gazebo's world and I've worked with the image that the pi
 This is a video example of how to PiBot robot stops when te stop signal is close to it.
 [![click here](VIDEO)](https://youtu.be/1SdQ4zZTE1Y "PiBot stops")
 
+This is the code I use:
+```
+cfg = config.load('/home/jorge/cuadernillos-kibotics/Kibotics.yml')
+robot = PiBot(cfg)
+
+def hay_stop():
+    img = robot.dameImagen()
+
+    rojo_bajo = np.array([0,0,0])
+    rojo_alto = np.array([80, 80, 80])
+
+    mask = cv2.inRange(img, rojo_bajo, rojo_alto)
+    
+    mask = cv2.erode(mask, None, iterations=2)
+    mask = cv2.dilate(mask, None, iterations=2)
+    
+    cnts = cv2.findContours(mask.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)[-2]
+
+    if len(cnts) > 0:
+        c = max(cnts, key=cv2.contourArea)
+        ((x, y), radius) = cv2.minEnclosingCircle(c)
+        M = cv2.moments(c)
+        area = M["m00"]
+        
+    print area    
+    return area > 12523.5   
+
+while True:
+    
+    if hay_stop():
+        robot.parar()
+    else:
+        robot.avanzar(0.4)
+```
+
+I have improved the road filter:
+
+![img](/docs/alfombra/road.png)
+![img](/docs/alfombra/road_better_filter.png)
+
+I have also made some changes in the Gazebo world:
+* Add sky and clouds.
+* Resize the carpet model.
+* Add stop sign.
+
+
 
 # WEEK 8
 
