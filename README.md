@@ -1,5 +1,17 @@
 # 2019-tfg-jorge_cruz
 
+# WEEK 10
+
+I moved my project to WebSim!
+
+![img](/docs/alfombra_2.png)
+![img](/docs/alfombra_1.png)
+![img](/docs/pibot+numero.png)
+![img](/docs/vista_pibot_numero.png)
+
+
+
+
 # WEEK 9
 
 I added a stop sign to gazebo's world and I've worked with the image that the pibot get and the color filters to detect the signal.
