@@ -1,5 +1,13 @@
 # 2019-tfg-jorge_cruz
 
+# WEEK 11
+
+![img](/docs/alfombra/encarado.png)
+![img](/docs/alfombra/cartel_acotado.png)
+![img](/docs/alfombra/traffic_signals.png)
+
+
+
 # WEEK 10
 
 I moved my project to WebSim!
