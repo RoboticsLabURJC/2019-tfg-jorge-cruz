@@ -4,7 +4,7 @@
 
 I have started working with DeepLearning and neural networks and I developed a web app that consists of the classification of handwritten numbers. This is the github repositore <a href="https://github.com/jcruzde/mnist-handwritten-recognition.git">github repositore</a> with the code and an example video
 
-https://www.youtube.com/watch?v=dL0dxGdI0pw
+[![IMAGE ALT TEXT](/docs/handwritten-youtube.png)](https://www.youtube.com/watch?v=dL0dxGdI0pw)
 
 
 # WEEK 11
