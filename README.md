@@ -1,6 +1,15 @@
 # 2019-tfg-jorge_cruz
 
+# WEEK 12
+
+I have started working with DeepLearning and neural networks and I developed a web app that consists of the classification of handwritten numbers. This is the github repositore <a href="https://github.com/jcruzde/mnist-handwritten-recognition.git">github repositore</a> with the code and an example video
+
+https://www.youtube.com/watch?v=dL0dxGdI0pw
+
+
 # WEEK 11
+
+I have created new 3D models and inserted them into my PiBot world. The future goal is that our PiBot robot will be able to detect these different elements through a neural network.
 
 ![img](/docs/alfombra/encarado.png)
 ![img](/docs/alfombra/cartel_acotado.png)
