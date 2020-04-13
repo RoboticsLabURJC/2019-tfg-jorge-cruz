@@ -1,5 +1,11 @@
 # 2019-tfg-jorge_cruz
 
+# WEEK 13
+I have improved the handwritten number classifier, now with real time recognition and classification. Source code in this <a href="https://github.com/RoboticsLabURJC/2019-tfg-jorge-cruz/tree/master/mnist-handwritten-recognition">directory</a> . This a example video.
+
+[![IMAGE ALT TEXT](/docs/handwritten_v2.png)](https://www.youtube.com/watch?v=7eZKIZAyolo)
+
+
 # WEEK 12
 
 I have started working with DeepLearning and neural networks and I developed a web app that consists of the classification of handwritten numbers. This is the github repositore <a href="https://github.com/jcruzde/mnist-handwritten-recognition.git">github repositore</a> with the code and an example video
