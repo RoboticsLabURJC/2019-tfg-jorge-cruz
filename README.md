@@ -1,10 +1,25 @@
 # 2019-tfg-jorge_cruz
 
+# WEEK 14
+I have started to study detection's neural networks with the Tensorflow.js Coco SSD (Common Objects in Context Single Shot MultiBox Detection) pre-trainer model.
+
+First using the webcam and video live:
+
+[![IMAGE ALT TEXT](/docs/OD_Youtube.png)](https://youtu.be/APm9VxMxFg4)
+
+Then with images from the camera of the PiBot robot on websim:
+
+
+
+
+
 # WEEK 13
 I have improved the handwritten number classifier, now with real time recognition and classification. Source code in this <a href="https://github.com/RoboticsLabURJC/2019-tfg-jorge-cruz/tree/master/mnist-handwritten-recognition">directory</a> . This a example video.
 
 [![IMAGE ALT TEXT](/docs/handwritten_v2.png)](https://www.youtube.com/watch?v=7eZKIZAyolo)
 
+![img](/docs/OD_semaforos.png)
+![img](/docs/OD_Stop.png)
 
 # WEEK 12
 
