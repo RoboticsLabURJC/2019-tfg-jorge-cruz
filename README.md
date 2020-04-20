@@ -9,7 +9,8 @@ First using the webcam and video live:
 
 Then with images from the camera of the PiBot robot on websim:
 
-
+![img](/docs/OD_semaforos.png)
+![img](/docs/OD_Stop.png)
 
 
 
@@ -17,9 +18,6 @@ Then with images from the camera of the PiBot robot on websim:
 I have improved the handwritten number classifier, now with real time recognition and classification. Source code in this <a href="https://github.com/RoboticsLabURJC/2019-tfg-jorge-cruz/tree/master/mnist-handwritten-recognition">directory</a> . This a example video.
 
 [![IMAGE ALT TEXT](/docs/handwritten_v2.png)](https://www.youtube.com/watch?v=7eZKIZAyolo)
-
-![img](/docs/OD_semaforos.png)
-![img](/docs/OD_Stop.png)
 
 # WEEK 12
 
