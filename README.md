@@ -1,5 +1,21 @@
 # 2019-tfg-jorge_cruz
 
+# END OF DEGREE PROJECT
+
+## Index
+- [Introduction](#introduction).
+- [Methodology](#methodology).
+- [Conclusions](#conclusions).
+
+### Introduction
+Short summary of the project
+
+### Methodology
+Detailed description of the project
+
+### Conclusions
+Final conclusions obtained from the project
+
 # WEEK 14
 I have started to study detection's neural networks with the Tensorflow.js Coco SSD (Common Objects in Context Single Shot MultiBox Detection) pre-trainer model.
 
