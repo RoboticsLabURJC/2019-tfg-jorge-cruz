@@ -1,0 +1,53 @@
+<!doctype html>
+{% load static %}
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>choca_gira_us_teoria</title></head>
+<body><h2>Ejercicio ChocaGira Ultrasonidos</h2>
+<p>En este ejercicio deberás programar nuestro robot <strong>PiBot</strong> para que sea capaz de deambular por una habitación sin chocarse con ningún obstáculo. El PiBot debe ser programado de forma que utilice sus <em>sensores</em> para obtener información del entorno continuamente, y sus <em>actuadores</em> para ejecutar las acciones necesarias para poder ir moviéndose por la habitación evitando los diferentes obstáculos, de acuerdo a la información obtenida por los sensores.</p>
+<p>Concretamente, el programa debe hacer que el PiBot avance en línea recta hasta que se encuentre a poca distancia de chocar contra un obstáculo frontal. En ese momento, el programa debe hacer que el PiBot se detenga, retroceda durante unos instantes, gire a la izquierda una cantidad de grados <em>aleatoria</em>, y continúe avanzando en línea recta como al principio.</p>
+<p>En una primera fase programarás el PiBot simulado en un mundo 3D, para poder ensayar haciendo cambios a tu programa hasta que consigas que deambule por la habitación evitando los obstáculos sin chocar. Tras completar con éxito la primera fase, estarás listo para probar tu programa en el robot PiBot real !!!</p>
+<h4>Sensores del PiBot a utilizar</h4>
+<p>Vamos a usar el sensor de Ultrasonidos (abreviado US) que tiene el PiBot en su parte frontal. Este sensor es capaz de detectar la presencia de un obstáculo que se encuentre enfrente del PiBot por medio de la emisión/detección de ondas de ultrasonidos. Para ello, en el programa debes llamar a siguiente función:</p>
+<figure><table>
+<thead>
+<tr><th>Función</th><th>Descripción</th></tr></thead>
+<tbody><tr><td><strong>leerUltrasonido()</strong></td><td>Lee el sensor de US y nos devuelve un valor que representa la distancia (en metros) a un obstáculo que se encuentre enfrente del PiBot</td></tr></tbody>
+</table></figure>
+<p>Los posibles valores que nos devuelve la función <strong>leerUltrasonido()</strong> se corresponden con diferentes distancias del PiBot con respecto al obstáculo que tiene enfrente. Por ejemplo:</p>
+<figure><table>
+<thead>
+<tr><th>valor = 4.01</th><th>valor = 3.32</th><th>valor = 2.43</th><th>valor = 1.62</th><th>valor = 0.58</th></tr></thead>
+<tbody><tr><td><img src='{% static "python/choca_gira_us/img/choca_gira_distancia1.png" %}'></td><td><img src="{% static 'python/choca_gira_us/img/choca_gira_distancia2.png' %}"></td><td><img src="{% static 'python/choca_gira_us/img/choca_gira_distancia3.png' %}"></td><td><img src="{% static 'python/choca_gira_us/img/choca_gira_distancia4.png' %}"></td><td><img src="{% static 'python/choca_gira_us/img/choca_gira_distancia5.png' %}"></td></tr></tbody>
+</table></figure>
+<h4>Actuadores del PiBot a utilizar</h4>
+<p>Vamos a usar los motores que incorpora el PiBot (uno en cada rueda motriz) para hacer que se mueva según nuestras necesidades. Para ello, en el programa debes llamar a las siguientes funciones:</p>
+<figure><table>
+<thead>
+<tr><th>Función</th><th>Descripción</th></tr></thead>
+<tbody><tr><td><strong>avanzar(<code>v</code>)</strong></td><td>Hace que el PiBot avance en línea recta con una velocidad lineal igual a <code>v</code> expresada en metros/segundo</td></tr><tr><td><strong>retroceder(<code>v</code>)</strong></td><td>Hace que el PiBot retroceda en línea recta con una velocidad lineal igual a <code>v</code> expresada en metros/segundo</td></tr><tr><td><strong>girarIzquierda(<code>w</code>)</strong></td><td>Hace que el PiBot gire a la izquierda sobre su eje (sin avanzar) con una velocidad angular igual a <code>w</code> expresada en radianes/segundo</td></tr><tr><td><strong>girarDerecha(<code>w</code>)</strong></td><td>Hace que el PiBot gire a la derecha sobre su eje (sin avanzar) con una velocidad angular igual a <code>w</code> expresada en radianes/segundo</td></tr></tbody>
+</table></figure>
+<p><strong>NOTA:</strong> Recordamos que 2&pi; radianes equivalen a 360 grados.</p>
+<p>Estas funciones se corresponden con los siguientes comportamientos del PiBot:</p>
+<figure><table>
+<thead>
+<tr><th>avanzar</th><th>retroceder</th><th>girarIzquierda</th><th>girarDerecha</th></tr></thead>
+<tbody><tr><td><img src="{% static 'python/choca_gira_us/img/choca_gira_avanzar.png' %}"></td><td><img src="{% static 'python/choca_gira_us/img/choca_gira_retroceder.png' %}"></td><td><img src="{% static 'python/choca_gira_us/img/choca_gira_girar_izquierda.png' %}"></td><td><img src="{% static 'python/choca_gira_us/img/choca_gira_girar_derecha.png' %}"></td></tr></tbody>
+</table></figure>
+<p>Disponemos también de una última función, no por ello menos importante:</p>
+<figure><table>
+<thead>
+<tr><th>Función</th><th>Descripción</th></tr></thead>
+<tbody><tr><td><strong>parar()</strong></td><td>Hace que el PiBot se detenga (si estaba avanzando, retrocediendo o girando)</td></tr></tbody>
+</table></figure>
+<h4>Pistas para resolver el ejercicio</h4>
+<ul>
+<li>Debes hacer que tu programa capture la información de los sensores y, en función de esa información, realizar acciones utilizando los actuadores para que el PiBot se comporte de la forma deseada</li>
+<li>El punto anterior no debe hacerse una sola vez, sino de forma continua (varias veces por segundo) para que el piBot pueda ir moviéndose por la habitación sin chocar con ningún obstáculo</li>
+<li>Cuando el piBot reciba una orden de avanzar, retroceder o girar, continuará ejecutando dicha orden hasta que reciba otra orden (si la orden es la misma, continuará haciendo lo mismo que estaba haciendo)</li>
+
+</ul>
+<h3>¿Puedes conseguir que el PiBot se mueva por la habitación sin chocarse con los obstáculos? Inténtalo, es divertido!</h3>
+</body>
+</html>
