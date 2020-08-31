@@ -1,30 +1,5 @@
 # 2019-tfg-jorge_cruz
 
-# END OF DEGREE PROJECT
-
-## Index
-- [Introduction](#introduction)
-- [Objectives](#Objetives)
-- [Infrastructure](#Infrastructure)
-- [ObjectDetector](#ObjectDetector)
-- [FollowRoad](#FollowRoad)
-- [Conclusions](#conclusions)
-
-### Introduction
-Short summary of the project
-
-### Objetives
-Detailed description of the project
-
-### Infrastructure
-
-### ObjectDetector TensorFlowjs
-
-### FollowRoad application
-
-### Conclusions
-
-
 # WEEK 14
 I have started to study detection's neural networks with the Tensorflow.js Coco SSD (Common Objects in Context Single Shot MultiBox Detection) pre-trainer model.
 
