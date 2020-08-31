@@ -1,0 +1,9 @@
+{
+  "sigue_linea_ir":{
+    "language": "python",
+    "platform": "",
+    "world": ".world",
+    "models": "asd",
+    "referee": false
+  }
+}
