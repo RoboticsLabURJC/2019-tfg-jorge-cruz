@@ -1,13 +1,16 @@
 \documentclass[11pt]{article}
-%Gummi|065|=)
-\title{\textbf{Deep Learning for Detecting Objects in Robots using TensorFlowjs and Websim/Kibotics}}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+
+\title{\textbf{Deep Learning for Detecting Objects in Images with Robots using TensorFlowjs and Websim/Kibotics}}
 \author{Author: Jorge Cruz de la Haza\\
-		Tutor: Jose Maria Ca\~nas Plaza\\
-		Co-tutor: Prf. Julio Manuel Vega P\'erez}
+		Tutor: Dr. Jose Maria Cañas Plaza\\
+		Co-tutor: Prf. Julio Manuel Vega Pérez}
 \date{}
 \begin{document}
 
 \maketitle
+\clearpage
 
 \section{Introduction}
 
