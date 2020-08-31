@@ -6,8 +6,8 @@
 - [Introduction](#introduction)
 - [Objectives](#Objetives)
 - [Infrastructure](#Infrastructure)
-- [ObjectDetector TensorFlowjs](#ObjectDetector TensorFlowjs)
-- [FollowRoad application](#FollowRoad application)
+- [ObjectDetector](#ObjectDetector)
+- [FollowRoad](#FollowRoad)
 - [Conclusions](#conclusions)
 
 ### Introduction
