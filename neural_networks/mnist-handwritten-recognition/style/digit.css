@@ -1,0 +1,38 @@
+#wrap {
+  background-color: rgb(158, 220, 228);
+  border-radius: 5px;
+  width: 1000pt;
+  height: 600pt;
+  margin: 0 auto;
+}
+
+h3{
+    font-size: 15px;
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    color: white;
+    margin: 0px;
+    text-align: center;
+}
+
+
+#video_live{
+    position: relative;
+    margin: 20px;
+    float: left;
+}
+
+#botones{
+    position: relative;
+    margin: 20px;
+    margin-left: 130px;
+    float: left;
+}
+
+#bloque_izda{
+  display: block !important;
+
+   position: relative;
+   margin: 20px;
+   float: right;
+}

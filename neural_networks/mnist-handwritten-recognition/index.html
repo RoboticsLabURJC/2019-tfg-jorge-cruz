@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<title>Hand Written Digit Recognition using TensorFlow.js</title>
+	<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
+	<link rel="stylesheet" type="text/css" href="style/digit.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+
+	<div id="wrap">
+		<h3>Hand Written Digit Recognition</h3>
+		<div id="video_live">
+			<video id="video" width="600" height="500 autoplay" style="border:5px solid black;"></video>
+		</div>
+
+		<div id="bloque_izda">
+			<div id="canvas_entrada">
+        	<canvas id="canvas" width="400" height="300" style="border:5px solid black;"></canvas>
+		</div>
+			<div id="canvas_resultado">
+			<canvas id="resultado" width="400" height="300" style="border:5px solid black;"></canvas>
+		</div>
+		</div>
+		<div id="botones">
+			<div class="btn">
+			<button id="Continuous" class="btn btn-dark">Continuous</button>
+		</div>
+			<div class="btn">
+			<button id="Capture" class="btn btn-dark">Capture</button>
+		</div>
+			<div class="btn">
+			<button id="Start_Predict" class="btn btn-dark">Start Predict</button>
+		</div>
+		</div>
+
+	</div>
+
+	<script src="js/digit-recognition.js"></script>
+    <script src="js/javascript.js"></script>
+
+</html>

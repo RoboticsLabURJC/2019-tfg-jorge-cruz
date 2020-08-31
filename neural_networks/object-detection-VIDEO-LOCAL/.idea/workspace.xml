@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6fdfe0ce-3412-4387-ac4f-397ca532702c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MNIST.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../images/handwritten-recognition-5.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../js/chart.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../js/digit-recognition.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../models/group1-shard1of4.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../models/group1-shard2of4.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../models/group1-shard3of4.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../models/group1-shard4of4.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../models/model.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../style/digit.css" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>domContainer</find>
+      <find>reactDOM</find>
+      <find>react</find>
+      <find>VIDEO</find>
+      <find>VideoRef44</find>
+      <find>videoRef</find>
+      <find>root</find>
+      <find>spectatorDiv</find>
+      <find>script</find>
+      <find>INIT</find>
+      <find>capture</find>
+      <find>i</find>
+      <find>video</find>
+      <find>canvas</find>
+      <find>ctx</find>
+      <find>ct</find>
+      <find>img</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/../mnist-handwritten-recognition/index.html" />
+        <option value="$PROJECT_DIR$/../object-v2/detect.js" />
+        <option value="$PROJECT_DIR$/../object-v2/index.html" />
+        <option value="$PROJECT_DIR$/estilo.css" />
+        <option value="$PROJECT_DIR$/detect.js" />
+        <option value="$USER_HOME$/kibotics-websim/assets/config/alfombra.json" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/../object-detection-IMAGEN-LOCAL/detect.js" />
+        <option value="$USER_HOME$/kibotics-websim/JavaScript-editor/miscosas.js" />
+        <option value="$USER_HOME$/kibotics-websim/JavaScript-editor/detect.js" />
+        <option value="$USER_HOME$/kibotics-websim/JavaScript-editor/index.html" />
+        <option value="$USER_HOME$/kibotics-websim/JavaScript-editor/object_detection.js" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="642" />
+    <option name="y" value="1230" />
+    <option name="width" value="1319" />
+    <option name="height" value="701" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../object-detection-IMAGEN-LOCAL" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6fdfe0ce-3412-4387-ac4f-397ca532702c" name="Default Changelist" comment="" />
+      <created>1586949238342</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1586949238342</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="321" y="1076" width="1318" height="772" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18209876" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1842714" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.js" />
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.css" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/../mnist-handwritten-recognition/index.html" />
+    <entry file="file://$PROJECT_DIR$/../object-v2/index.html" />
+    <entry file="file://$PROJECT_DIR$/../object-v2/detect.js" />
+    <entry file="file://$PROJECT_DIR$/../tensorflowjs-objectdetection-tutorial-master/detect.js" />
+    <entry file="file://$USER_HOME$/kibotics-websim/JavaScript-editor/js/editor-methods.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="15" column="35" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/kibotics-websim/JavaScript-editor/js/editor.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../REDES NEURONALES/mnist-handwritten-recognition-video-live/js/digit-recognition.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-48" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/kibotics-websim/simcore/utils/opencv3.3.1.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/kibotics-websim/simcore/utils/functions.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/kibotics-websim/simcore/config/cameras.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/kibotics-websim/simcore/robots/interfacesRobotWW.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2028" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/kibotics-websim/simcore/robots/interfacesRobot.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2223" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/kibotics-websim/brains/worker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1244" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/kibotics-websim/JavaScript-editor/js/ace-editor/worker-javascript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-71978" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/kibotics-websim/simcore/utils/jsgl.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../REDES NEURONALES/mnist-handwritten-only-capture/js/camera.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1326">
+          <caret line="101" selection-start-line="101" selection-end-line="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../REDES NEURONALES/mnist-handwritten-recognition-video-live/detect.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../REDES NEURONALES/mnist-handwritten-only-capture/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="63" column="103" lean-forward="true" selection-start-line="63" selection-start-column="16" selection-end-line="63" selection-end-column="103" />
+          <folding>
+            <element signature="n#style#0;n#canvas#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../REDES NEURONALES/mnist-handwritten-recognition-video-live/js/javascript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="11" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/detect.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/estilo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/kibotics-websim/JavaScript-editor/miscosas.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1287">
+          <caret line="99" column="56" selection-start-line="99" selection-start-column="56" selection-end-line="99" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../object-detection-IMAGEN-LOCAL/detect.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="806">
+          <caret line="62" column="32" lean-forward="true" selection-start-line="62" selection-start-column="32" selection-end-line="62" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/kibotics-websim/assets/config/alfombra.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="103" column="21" lean-forward="true" selection-start-line="103" selection-start-column="21" selection-end-line="103" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../object-detection-IMAGEN-LOCAL/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="22" column="2" lean-forward="true" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/kibotics-websim/JavaScript-editor/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/kibotics-websim/JavaScript-editor/object_detection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="24" selection-start-column="24" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/kibotics-websim/JavaScript-editor/detect.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="14" selection-end-line="88" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

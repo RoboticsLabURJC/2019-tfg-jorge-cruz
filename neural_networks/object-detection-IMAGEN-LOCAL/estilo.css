@@ -1,0 +1,7 @@
+#img{
+    border: 10px solid black;
+    position: absolute;
+    top:  1000px;
+    left: 0px;
+    z-index:-1;
+}
