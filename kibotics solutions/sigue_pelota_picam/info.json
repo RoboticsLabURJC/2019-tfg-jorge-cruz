@@ -1,9 +1,0 @@
-{
-  "sigue_pelota_picam":{
-    "language": "python",
-    "platform": "",
-    "world": ".world",
-    "models": "asd",
-    "referee": false
-  }
-}
