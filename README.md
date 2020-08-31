@@ -3,18 +3,27 @@
 # END OF DEGREE PROJECT
 
 ## Index
-- [Introduction](#introduction).
-- [Methodology](#methodology).
-- [Conclusions](#conclusions).
+- [Introduction](#introduction)
+- [Objectives](#Objetives)
+- [Infrastructure](#Infrastructure)
+- [ObjectDetector TensorFlowjs](#ObjectDetector TensorFlowjs)
+- [FollowRoad application](#FollowRoad application)
+- [Conclusions](#conclusions)
 
 ### Introduction
 Short summary of the project
 
-### Methodology
+### Objetives
 Detailed description of the project
 
+### Infrastructure
+
+### ObjectDetector TensorFlowjs
+
+### FollowRoad application
+
 ### Conclusions
-Final conclusions obtained from the project
+
 
 # WEEK 14
 I have started to study detection's neural networks with the Tensorflow.js Coco SSD (Common Objects in Context Single Shot MultiBox Detection) pre-trainer model.
