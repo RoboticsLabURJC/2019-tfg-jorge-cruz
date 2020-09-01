@@ -20,7 +20,7 @@
     3.3 OpenCVjs Library
     3.4 TensorFlowjs
       3.4.1 MNIST
-      3.4.2 COCO-SSD and Miniproxy
+      3.4.2 COCO-SSD
 
 ## 4 Autonomous robot in simulated city
     4.1 PiBot
