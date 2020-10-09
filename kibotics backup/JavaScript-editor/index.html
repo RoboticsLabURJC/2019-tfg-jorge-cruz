@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>WebSim - JavaScript </title>
+    <meta charset="utf-8"/>
+    <!-- Physics for A-Frame VR -->
+    <link rel="stylesheet" type="text/css" href="css/main.css"></link>
+    <script src="js/ace-editor/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script src="build/websim.bundle.js"></script>
+    <script src="build/editor.bundle.js"></script>
+    <script type="text/javascript" src="../simcore/utils/jsgl.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+
+    <!-- Load TensorFlow.js-->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0/dist/tf.min.js"></script>
+    <!-- Load the coco-ssd model. -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+
+    <script>
+        //var config_evaluator = "evaluator_follow_line.js";
+        //var evaluator_icon1 = "icons/car1.svg";
+        //var evaluator_icon2 = "icons/car2.svg";
+    </script>
+    <script>var config_file = 'config/alfombra.json';</script>
+</head>
+<body>
+<nav id="navbar">
+    <a href="/index.html"><img src="icons/jderobot.svg" alt="JdeRobot logo"
+                               style="width:70px; height:70px; margin-top: 6px;"/></a>
+    <div id="buttons" style="display: none;">
+        <button onclick id="resetRobot"><img src="icons/reset.png" alt="Reset button image"/></button>
+        <button onclick id="runbtn"><img src="icons/play-icon.png" alt="Run button image"/></button>
+        <button onclick id="cambtn"><img src="icons/play-camera-icon.png" alt="Stop button image"/>
+        </button>
+    </div>
+</nav>
+<div id="container">
+    <div id="myIFrame">
+    </div>
+    <div id="right-container">
+        <div id="ace">
+                const speed = 0.5;
+                const tope_espera = 30;
+                var espera = 0;
+
+                async function esquivar(objetoCiudad){
+                    if((objetoCiudad.clase == "traffic light rojo")  & (objetoCiudad.area>200)){
+                        myRobot.move(0,0,0);
+
+                        do{
+                            var objetoCiudad2 = await myRobot.dameObjetoCiudad();
+                            console.log(objetoCiudad2);
+                            await myRobot.sleep(0.15);
+
+                        }while(objetoCiudad2.clase != "traffic light verde-amarillo")
+
+                        console.log('LETS GO!');
+                        myRobot.move(speed,0,0);
+
+                    }else if((objetoCiudad.clase == "stop sign")  & (objetoCiudad.area>80)){
+                        console.log('STOP!');
+                        myRobot.move(0,0,0);
+                        await myRobot.sleep(3);
+                        myRobot.move(speed,0,0);
+                        await myRobot.sleep(3); // Para que pase la señal y no se siga parando
+
+                    }else if((objetoCiudad.clase == "person")  & (objetoCiudad.area>150)){
+                        console.log('PERSONA!');
+                        myRobot.move(0,0,0);
+
+                        do{
+                            var objetoCiudad2 = await myRobot.dameObjetoCiudad();
+                            console.log(objetoCiudad2);
+                            await myRobot.sleep(0.15);
+
+                        }while(objetoCiudad2.clase != "person")
+
+                        console.log('LETS GO!');
+                        myRobot.move(speed,0,0);
+
+                    }
+                }
+
+                async function conducir(){
+
+                    await myRobot.loadModel();
+                    await myRobot.sleep(20);
+
+                    myRobot.move(speed,0,0);
+
+                    while (true){
+                        var objetoCiudad = await myRobot.dameObjetoCiudad();
+                        console.log(objetoCiudad);
+                        await esquivar(objetoCiudad);
+
+                        await myRobot.sleep(0.15);
+                    }
+
+                }
+
+                conducir();
+        </div>
+        <div id="cameras" style="display:inline-flex;">
+            <div id="cameraOpenCV" style="margin-left: 5px; margin-right: 15px;">
+                <p>OpenCV image</p>
+                <canvas id="outputCanvas" style="width:150px; height:100px; display: none" ></canvas>
+            </div>
+            <div id="robotCam">
+                <p>Robot Camera</p>
+                <div id="spectatorDiv" style="width: 150px; height: 100px;"></div>
+            </div>
+        </div>
+        <div id="console_web" class="console-web">
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="../simcore/utils/opencv3.3.1.js"></script>
+</body>
+</html>

@@ -1,0 +1,303 @@
+{
+    "scene-parent-id": "myIFrame",
+    "scene": {
+        "id": "scene",
+        "gravity": -9.8,
+        "ground": "../assets/textures/bump&go.png",
+        "sky": "../assets/textures/sky.png",
+        "background": "color: gray;",
+        "inspector": "url: https://aframe.io/releases/0.4.0/aframe-inspector.min.js",
+        "embedded": true,
+        "stats": false,
+        "physics": "debug: true; friction: 0.0000001"
+    },
+    "robots_config": [ 
+        {
+            "controller": "user1",
+            "id": "a-pibot"
+        }
+    ],
+    "assets": [
+        {
+            "tag": "img",
+            "attr": {
+                "id": "ground",
+                "alt": "Texture for the scene ground",
+                "src": "../assets/textures/alfombra_infantil.png"
+            }
+        },
+        {
+            "tag": "a-asset-item",
+            "attr": {
+                "id": "model-pibot"
+            }
+        },
+        {
+            "tag": "img",
+            "attr": {
+                "id": "sky",
+                "alt": "Texture for the scene ground",
+                "src": "../assets/textures/sky.png"
+            }
+        }
+    ],
+    "objects":[
+        {
+            "tag": "a-entity",
+            "attr": {
+                "id": "sceneCamWrapper",
+                "position":{ "x":-15, "y":3, "z":19},
+                "rotation": { "x":0, "y":-40, "z":0},
+                "movement-controls": "fly:true"
+            },
+            "childs": [
+                {
+                    "tag": "a-camera",
+                    "attr": {
+                        "id": "sceneCam",
+                        "position": { "x":0, "y":0, "z":0},
+                        "rotation": { "x":0, "y":0, "z":0},
+                        "active": true,
+                        "wasd-controls-enabled": true,
+                        "look-controls-enabled": true
+                    }
+                }
+            ]
+        },
+        {
+            "tag": "a-gltf-model",
+            "attr": {
+                "position": { "x":-3.28, "y":-0.1, "z":0.60},
+                "scale": { "x":-0.12, "y":0.12, "z":0.12},
+                "rotation": {"x":0, "y":70},
+                "src": "../assets/models/alfombra/semaforo_animado_v2.glb",
+                "animation-mixer": "loop: repeat"
+            }
+        },
+        {
+            "tag": "a-gltf-model",
+            "attr": {
+                "position": { "x":-7, "y":-0.1, "z":11},
+                "scale": { "x":-0.2, "y":0.2, "z":0.2},
+                "rotation": {"x":0, "y":0},
+                "src": "../assets/models/alfombra/StopSign.glb",
+                "animation-mixer": "loop: repeat"
+            }
+        },
+        {
+            "tag": "a-gltf-model",
+            "attr": {
+                "position": { "x":-3.28, "y":-0.1, "z":6},
+                "scale": { "x":1, "y":1, "z":1},
+                "rotation": {"x":0, "y":-90},
+                "src": "../assets/models/alfombra/person2.glb",
+                "animation-mixer": "loop: repeat",
+                "animation": "property: position; from: -1.28 -0.1 6 ;to: -13.28 -0.1 6; dur: 40000; easeInOutQuad: linear; loop: true; dir: alternate"
+            }
+        },
+        {
+            "tag": "a-gltf-model",
+            "attr": {
+                "position": { "x":-3.28, "y":-0.1, "z":29.00},
+                "scale": { "x":1, "y":1, "z":1},
+                "rotation": {"x":0, "y":-90},
+                "src": "../assets/models/alfombra/person2.glb",
+                "animation-mixer": "loop: repeat",
+                "animation": "property: position; from: 4.28 -0.1 29.00 ;to: -10.28 -0.1 29.00; dur: 20000; easeInOutQuad: linear; loop: true; dir: alternate"
+            }
+        },
+        {
+            "tag": "a-gltf-model",
+            "attr": {
+                "position": { "x":-11.00, "y":-0.1, "z":18.00},
+                "scale": { "x":1, "y":1, "z":1},
+                "rotation": {"x":0, "y":33},
+                "src": "../assets/models/alfombra/person.glb",
+                "animation-mixer": "loop: repeat",
+                "animation": "property: position; from: -11.00 -0.1 18.00 ;to: -9.00 -0.1 25.00; dur: 10000; easeInOutQuad: linear; loop: true; dir: alternate"
+            }
+        },
+        {
+            "tag": "a-gltf-model",
+            "attr": {
+                "position": { "x":-4.90, "y":-0.2, "z":6},
+                "scale": { "x":0.2, "y":0.4, "z":0.35},
+                "rotation": {"x":0, "y":-90},
+                "src": "../assets/models/alfombra/crosswalk.glb"
+            }
+        },
+        {
+            "tag": "a-gltf-model",
+            "attr": {
+                "position": { "x":10.7, "y":-0.2, "z":-48},
+                "scale": { "x":0.28, "y":0.4, "z":0.3},
+                "rotation": {"x":0, "y":0},
+                "src": "../assets/models/alfombra/crosswalk.glb"
+            }
+        },
+        {
+            "tag": "a-gltf-model",
+            "attr": {
+                "position": { "x":-22, "y":-0.2, "z":-48},
+                "scale": { "x":0.28, "y":0.4, "z":0.3},
+                "rotation": {"x":0, "y":0},
+                "src": "../assets/models/alfombra/crosswalk.glb"
+            }
+        },
+        {
+            "tag": "a-gltf-model",
+            "attr": {
+                "position": { "x":-1, "y":-0.2, "z":-30.5},
+                "scale": { "x":0.43, "y":0.4, "z":0.4},
+                "rotation": {"x":0, "y":84},
+                "src": "../assets/models/alfombra/crosswalk.glb"
+            }
+        },
+        {
+            "tag": "a-gltf-model",
+            "attr": {
+                "position": { "x":-4.90, "y":-0.2, "z":30.00},
+                "scale": { "x":0.4, "y":0.4, "z":0.4},
+                "rotation": {"x":0, "y":-90},
+                "src": "../assets/models/alfombra/crosswalk.glb"
+            }
+        },
+        {
+            "tag": "a-gltf-model",
+            "attr": {
+                "position": { "x":-10.5, "y":-0.2, "z":21.00},
+                "scale": { "x":0.16, "y":0.4, "z":0.5},
+                "rotation": {"x":0, "y":27},
+                "src": "../assets/models/alfombra/crosswalk.glb"
+            }
+        },
+        {
+            "tag": "a-gltf-model",
+            "attr": {
+                "position": { "x":-33, "y":-0.2, "z":-43},
+                "scale": { "x":5, "y":0.4, "z":3},
+                "rotation": {"x":0, "y":50},
+                "src": "../assets/models/forest/bush.gltf"
+            }
+        },
+        {
+            "tag": "a-gltf-model",
+            "attr": {
+                "position": { "x":-5, "y":-0.2, "z":-43},
+                "scale": { "x":6, "y":0.4, "z":4},
+                "rotation": {"x":0, "y":-50},
+                "src": "../assets/models/forest/bush.gltf"
+            }
+        },
+        {
+            "tag": "a-gltf-model",
+            "attr": {
+                "position": { "x":-13, "y":-0.2, "z":-45},
+                "scale": { "x":4, "y":0.4, "z":2},
+                "rotation": {"x":0, "y":-50},
+                "src": "../assets/models/forest/bush.gltf"
+            }
+        },
+        {
+            "tag": "a-gltf-model",
+            "attr": {
+                "position": { "x":-13, "y":-0.2, "z":-45},
+                "scale": { "x":1, "y":0.8, "z":1},
+                "rotation": {"x":0, "y":-50},
+                "src": "../assets/models/forest/tree1.gltf"
+            }
+        },
+        {
+            "tag": "a-gltf-model",
+            "attr": {
+                "position": { "x":-10, "y":-0.2, "z":-40},
+                "scale": { "x":1, "y":0.8, "z":1},
+                "rotation": {"x":0, "y":-50},
+                "src": "../assets/models/forest/tree1.gltf"
+            }
+        },
+        {
+            "tag": "a-gltf-model",
+            "attr": {
+                "position": { "x":-30, "y":-0.2, "z":-40},
+                "scale": { "x":1.5, "y":1.5, "z":1.5},
+                "rotation": {"x":0, "y":-50},
+                "src": "../assets/models/forest/tree1.gltf"
+            }
+        },
+        {
+            "tag": "a-gltf-model",
+            "attr": {
+                "position": { "x":-8, "y":-0.2, "z":-40},
+                "scale": { "x":1, "y":0.8, "z":1},
+                "rotation": {"x":0, "y":-50},
+                "src": "../assets/models/forest/tree3.gltf"
+            }
+        },
+        {
+            "tag": "a-gltf-model",
+            "attr": {
+                "position": { "x":-10, "y":-0.2, "z":-43},
+                "scale": { "x":1, "y":0.8, "z":1},
+                "rotation": {"x":0, "y":-50},
+                "src": "../assets/models/forest/tree4.gltf"
+            }
+        },
+        {
+            "tag": "a-robot",
+            "attr": {
+                "id": "a-pibot",
+                "gltf-model":"../assets/models/jrobotFgltf.gltf",
+                "scale": { "x":40, "y":40, "z":40},
+                "position": { "x":-5.5, "y":0.5, "z":16},
+                "rotation": { "x":0, "y":90, "z":0},
+                "dynamic-body":{"mass": 1}
+
+            },
+            "childs": [
+                {
+                    "tag": "a-entity",
+                    "attr": {
+                        "id": "a-pibotCamera1Wrapper",
+                        "position": { "x": 0.02, "y": 0.025, "z": 0},
+                        "rotation": { "x": 0, "y":-90, "z":0}
+                    },
+                    "childs": [
+                        {
+                            "tag": "a-camera",
+                            "attr": {
+                                "id": "a-pibotCamera1",
+                                "position": { "x":0, "y":0, "z":0},
+                                "rotation": { "x":0, "y":0, "z":0},
+                                "active": false,
+                                "spectator": "canvas:#spectatorDiv; canvasID: a-pibotCamera1Canvas;",
+                                "wasd-controls-enabled": false,
+                                "look-controls-enabled": false
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "tag": "a-plane",
+            "attr": {
+                "static-body": {
+                    "mass": 100000
+                },
+                "position": { "x":0, "y":0, "z":0 },
+                "rotation": { "x":-90, "y":0, "z":0 },
+                "width": "100",
+                "height": "100",
+                "src":"#ground"
+
+
+            }
+        },
+        {
+            "tag": "a-sky",
+            "attr": {
+                "src": "#sky"
+            }
+        }]
+  }
