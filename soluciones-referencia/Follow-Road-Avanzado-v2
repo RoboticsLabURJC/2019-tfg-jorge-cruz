@@ -1,0 +1,47 @@
+        <div id="ace">
+                function maniobrar(centro){
+                    if (centro>28 & centro<38){
+                      console.log('RECTO');
+                      myRobot.move(0.5,0,0)
+                    }else if (centro>38 & centro<58){
+                      console.log('Giro DERECHA');
+                      myRobot.move(0.4,-0.0016,0)
+                    }else if (centro<28 & centro>8){
+                      console.log('Giro IZQUIERDA');
+                      myRobot.move(0.4,0.0016,0);
+                    }else{
+                      console.log('NO DETECTO');
+                      myRobot.move(0.5,0,0)
+                    }
+                }
+
+                async function esquivar(objetoCiudad){
+                    if(objetoCiudad.clase == "traffic light rojo-amarillo"){
+                        myRobot.move(0,0,0);
+                        await myRobot.sleep(3.5);
+                        myRobot.move(0.5,0,0);
+                    }
+                }
+
+                async function conducir(){
+
+                    await myRobot.loadModel();
+                    await myRobot.sleep(20);
+
+                    myRobot.move(1,0,0);
+
+                    while (true){
+                        var objetoCiudad = await myRobot.dameObjetoCiudad();
+                        console.log(objetoCiudad);
+                        esquivar(objetoCiudad);
+
+                        //var centro = await myRobot.dameCentro();
+                        //console.log(centro);
+                        //maniobrar(centro);
+
+                        await myRobot.sleep(0.15);
+                    }
+
+                }
+
+                conducir();

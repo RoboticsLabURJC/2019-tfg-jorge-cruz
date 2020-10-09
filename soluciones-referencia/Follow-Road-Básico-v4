@@ -1,0 +1,103 @@
+<div id="ace">
+                const speed = 0.75;
+                const centro = 40;
+                const margen = 5;
+                const rango1 = 10;
+                const rango2 = 10;
+                var no_detecto = 0;
+                const tope_no_detecto = 5;
+
+                async function encontrarse(){
+                    console.log('ME VOY A ENCONTRAR');
+                    myRobot.move(0,-0.003,0);
+                    var encontrado = true;
+                    while(encontrado){
+                        console.log('encontrandome...');
+                        posicion = await myRobot.dameCentro();
+                        console.log(posicion);
+                        if(isNaN(posicion)){
+                            encontrado = true;
+                        }else{
+                            console.log('ENTONTRADO');
+                            encontrado = false;
+                        }
+                        await myRobot.sleep(0.15);
+                    }
+                    myRobot.move(0,0,0);
+                }
+
+                async function maniobrar(posicion){
+                    if (posicion>(centro-margen) & posicion<(centro+margen)){
+                      console.log('RECTO');
+                      myRobot.move(speed,0,0);
+                      no_detecto = 0;
+
+                    }else if (posicion>(centro+margen) & posicion<(centro+margen+rango1)){
+                      console.log('Giro DERECHA');
+                      myRobot.move((speed-0.1),-0.002,0);
+                        no_detecto = 0;
+
+                    }else if (posicion>(centro+margen+rango1) & posicion<(centro+margen+rango1+rango2)){
+                      console.log('Giro GRANDE DERECHA');
+                      myRobot.move((speed-0.2),-0.003,0);
+                        no_detecto = 0;
+
+                    }else if (posicion>(centro+margen+rango1+rango2)){
+                      console.log('Giro EXTREMO DERECHA');
+                      myRobot.move((speed-0.4),-0.005,0);
+                        no_detecto = 0;
+
+                    }else if (posicion<(centro-margen) & posicion>(centro-margen-rango1)){
+                      console.log('Giro IZQUIERDA');
+                      myRobot.move((speed-0.1),0.002,0);
+                        no_detecto = 0;
+
+                    }else if (posicion<(centro-margen-rango1) & posicion>(centro-margen-rango1-rango2)){
+                      console.log('Giro GRANDE IZQUIERDA');
+                      myRobot.move((speed-0.2),0.003,0);
+                        no_detecto = 0;
+
+                    }else if (posicion<(centro-margen-rango1-rango2)){
+                      console.log('Giro EXTREMO IZQUIERDA');
+                      myRobot.move((speed-0.4),0.005,0);
+                        no_detecto = 0;
+
+
+                    }else{
+                      console.log('NO DETECTO');
+                      no_detecto = no_detecto+1;
+                      if(no_detecto>tope_no_detecto){
+                        console.log('PERDIDO');
+                        await encontrarse();
+                        no_detecto = 0;
+                      }else{
+                        myRobot.move(speed,0,0)
+                      }
+                    }
+                }
+
+                async function conducir(){
+
+                    /*
+                    await myRobot.loadModel();
+                    await myRobot.sleep(20); */
+
+                    myRobot.move(speed,0,0);
+
+                    while (true){
+                        /*
+                        var objetoCiudad = await myRobot.dameObjetoCiudad();
+                        console.log(objetoCiudad);
+                        esquivar(objetoCiudad); */
+
+                        var posicion = await myRobot.dameCentro();
+                        console.log(posicion);
+                        await maniobrar(posicion);
+
+                        await myRobot.sleep(0.15);
+                    }
+
+                }
+
+                conducir();
+        </div>

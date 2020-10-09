@@ -1,0 +1,74 @@
+        <div id="ace">
+                const speed = 0.9;
+                const centro = 44;
+                const margen = 7s;
+                const rango1 = 3;
+                const rango2 = 3;
+
+                function maniobrar(posicion){
+                    if (posicion>(centro-margen) & posicion<(centro+margen)){
+                      console.log('RECTO');
+                      myRobot.move(speed,0,0);
+
+                    }else if (posicion>(centro+margen) & posicion<(centro+margen+rango1)){
+                      console.log('Giro DERECHA');
+                      myRobot.move(speed*0.7,-0.002,0);
+
+                    }else if (posicion>(centro+margen+rango1) & posicion<(centro+margen+rango1+rango2)){
+                      console.log('Giro GRANDE DERECHA');
+                      myRobot.move(speed*0.5,-0.0035,0);
+
+                    }else if (posicion>(centro+margen+rango1+rango2)){
+                      console.log('Giro EXTREMO DERECHA');
+                      myRobot.move(speed*0.35,-0.004,0);
+
+                    }else if (posicion<(centro-margen) & posicion>(centro-margen-rango1)){
+                      console.log('Giro IZQUIERDA');
+                      myRobot.move(speed*0.7,0.002,0);
+
+                    }else if (posicion<(centro-margen-rango1) & posicion>(centro-margen-rango1-rango2)){
+                      console.log('Giro GRANDE IZQUIERDA');
+                      myRobot.move(speed*0.5,0.0035,0);
+
+                    }else if (posicion<(centro-margen-rango1-rango2)){
+                      console.log('Giro EXTREMO IZQUIERDA');
+                      myRobot.move(speed*0.35,0.004,0);
+
+                    }else{
+                      console.log('NO DETECTO');
+                      myRobot.move(speed,0,0);
+                    }
+                }
+
+                async function esquivar(objetoCiudad){
+                    if(objetoCiudad.clase == "traffic light rojo-amarillo"){
+                        myRobot.move(0,0,0);
+                        await myRobot.sleep(3.5);
+                        myRobot.move(0.5,0,0);
+                    }
+                }
+
+                async function conducir(){
+
+                    /* await myRobot.loadModel();
+                    await myRobot.sleep(20); */
+
+                    myRobot.move(speed,0,0);
+
+                    while (true){
+                        /*
+                        var objetoCiudad = await myRobot.dameObjetoCiudad();
+                        console.log(objetoCiudad);
+                        esquivar(objetoCiudad); */
+
+                        var posicion = await myRobot.dameCentro();
+                        console.log(posicion);
+                        maniobrar(posicion);
+
+                        await myRobot.sleep(0.15);
+                    }
+
+                }
+
+                conducir();
+        </div>

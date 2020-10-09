@@ -1,0 +1,60 @@
+        <div id="ace">
+                const speed = 0.8;
+                const centro = 40;
+                const margen = 5;
+                const tope = 20;
+                var no_detecto = 0;
+                const tope_no_detecto = 5;
+
+                async function maniobrar(posicion){
+                    if (posicion>(centro-margen) & posicion<(centro+margen)){
+                      console.log('RECTO');
+                      myRobot.move(speed,0,0);
+
+                    }else if (posicion>(centro+margen) & posicion<(centro+margen+tope)){
+                      console.log('Giro DERECHA');
+                      myRobot.move((speed-0.1),-0.0016,0);
+
+                    }else if (posicion<(centro-margen)){
+                      console.log('Giro IZQUIERDA');
+                      myRobot.move((speed-0.1),0.0016,0);
+
+                    }else{
+                      console.log('NO DETECTO');
+                      no_detecto = no_detecto+1;
+                      if(no_detecto>tope_no_detecto){
+                        console.log('PERDIDO');
+                        myRobot.move((speed-0.6),0.005,0);
+                        no_detecto = 0;
+                        await myRobot.sleep(2);
+                      }else{
+                        myRobot.move(speed,0,0)
+                      }
+                    }
+                }
+
+                async function conducir(){
+
+                    /*
+                    await myRobot.loadModel();
+                    await myRobot.sleep(20); */
+
+                    myRobot.move(speed,0,0);
+
+                    while (true){
+                        /*
+                        var objetoCiudad = await myRobot.dameObjetoCiudad();
+                        console.log(objetoCiudad);
+                        esquivar(objetoCiudad); */
+
+                        var posicion = await myRobot.dameCentro();
+                        console.log(posicion);
+                        maniobrar(posicion);
+
+                        await myRobot.sleep(0.15);
+                    }
+
+                }
+
+                conducir();
+        </div>
